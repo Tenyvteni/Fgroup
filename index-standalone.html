@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FGROUP - Denis Invest Group | Construction Résidentielle</title>
+    <meta name="description" content="FGROUP - Spécialiste en construction résidentielle. Construire selon vos besoins avec l'excellence française.">
+    <link rel="stylesheet" href="standalone-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="FGROUP - Denis Invest Group" class="logo">
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Accueil</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#" class="nav-link" onclick="openLicenseModal()">Licence</a>
+            </nav>
+            
+            <button class="contact-btn" onclick="scrollToSection('contact')">
+                Nous contacter
+            </button>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1722297905922-37ad65c469ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGJ1aWxkaW5ncyUyMGFwYXJ0bWVudHMlMjBtb2Rlcm4lMjBhcmNoaXRlY3R1cmV8ZW58MXx8fHwxNzU3OTcxMDY2fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Bâtiments résidentiels modernes" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logo.jpg" alt="FGROUP - Denis Invest Group" class="hero-logo-img">
+            </div>
+            
+            <div class="hero-text">
+                <p class="hero-tagline">Construire selon vos besoins, guidés par votre avis.</p>
+                <p class="hero-subtitle">Construction résidentielle avec une approche personnalisée et un savoir-faire français.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos de FGROUP</h2>
+                <p class="company-subtitle">Denis Invest Group</p>
+                <p class="section-description">
+                    Nous sommes une entreprise de construction leader, spécialisée dans la réalisation de projets 
+                    résidentiels de toute complexité. Des appartements individuels aux complexes résidentiels — nous créons 
+                    des espaces de vie qui durent dans le temps avec l'excellence française.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Construction moderne</h3>
+                    <p>Nous utilisons des technologies de pointe et des matériaux haut de gamme pour créer des structures durables</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Équipe expérimentée</h3>
+                    <p>Une équipe de professionnels avec de nombreuses années d'expérience dans l'industrie du bâtiment</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Qualité supérieure</h3>
+                    <p>Nous garantissons le respect de tous les standards de qualité et normes de construction</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Respect des délais</h3>
+                    <p>Nous livrons nos projets dans les délais convenus sans compromettre la qualité</p>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">200</div>
+                    <p>Projets réalisés</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <p>En cours</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">87%</div>
+                    <p>Satisfaction client</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <p>Années d'expérience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Portfolio</h2>
+                <p class="section-description">
+                    Découvrez nos réalisations récentes et nos projets de construction résidentielle 
+                    qui témoignent de notre savoir-faire et de notre attention aux détails.
+                </p>
+            </div>
+
+            <div class="portfolio-list" id="portfolioList">
+                <!-- Portfolio items will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nous contacter</h2>
+                <p class="section-description">
+                    Prêt à commencer votre projet ? Contactez-nous pour une consultation gratuite.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>93170 Bagnolet, France</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 1 48 97 48 97</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@fgroup-construction.fr</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="nouveau-projet">Nouveau projet</option>
+                            <option value="devis">Demande de devis</option>
+                            <option value="renovation">Rénovation</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="public/logo.jpg" alt="FGROUP - Denis Invest Group" class="logo">
+                    </div>
+                    <p>Construction résidentielle avec l'excellence française depuis plus de 15 ans.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#portfolio">Construction neuve</a></li>
+                        <li><a href="#portfolio">Rénovation</a></li>
+                        <li><a href="#portfolio">Aménagement</a></li>
+                        <li><a href="#contact">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 93170 Bagnolet, France</li>
+                        <li><i class="fas fa-phone"></i> +33 1 48 97 48 97</li>
+                        <li><i class="fas fa-envelope"></i> contact@fgroup-construction.fr</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FGROUP - Denis Invest Group. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- License Modal -->
+    <div id="licenseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Licence FGROUP - Denis Invest Group</h2>
+                <button class="close-btn" onclick="closeLicenseModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="public/assets/licence.png" alt="Licence FGROUP - Denis Invest Group" class="license-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Button -->
+    <button class="admin-btn" onclick="showAdminPanel()">
+        <i class="fas fa-cogs"></i>
+    </button>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <span>Message envoyé avec succès!</span>
+    </div>
+
+    <script src="standalone-script.js"></script>
+</body>
+</html>
